@@ -91,11 +91,11 @@ var nums = [1,2,3,6,22,98,45,23,22,12];
 */
 
 //Code Here
-var nums = [1,2,3,6,22,98,45,23,22,12];
-
-let evenFinder = function(nums) {
+function evenFinder(nums) {
   for (let i = 0 ; i < nums.length ; i++) {
-      nums.splice(i,1)
+      if (nums[i] % 2 !== 0) {
+        nums.splice(i,1)
+      } 
     }
   return nums  
 }
@@ -129,7 +129,9 @@ var numbersArray = [1,2,34,54,55,34,32,11,19,17,54,66,13];
 */
 
 //Code Here
-
+function divider(numbersArray) {
+  
+}
 
 
 ////////// PROBLEM 7 //////////

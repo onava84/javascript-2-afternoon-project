@@ -121,13 +121,18 @@ contains(names, 'Colt', function(result){
 */
 
 //Code Here
-// function uniq(arr, callback) {
-//   for (i = 0 ; i < arr.length ; i++) {
-//     if (i === arr.length -1) {
-//       arr.splice([i],1)
-//     }AQUI ME QUEDE
-//   }
-// }
+function uniq(arr, callback) {
+  for (i = 0; i < arr.length ; i++) {
+    for (j = i + 1; j < arr.length ; j++) {
+      if (arr[i] === arr[j]) {
+        arr.splice(j,1)    
+      }
+    } 
+
+  }
+  callback(arr)
+}
+
 
 // Do not edit the code below.
 uniq(names, function(uniqArr){

@@ -85,6 +85,7 @@ Instead, console.log your whole backPack object and then check out the console.
 */
 
 //Code here
+console.log(backPack)
 
 ////////// PROBLEM 4 //////////
 
@@ -106,6 +107,9 @@ var user2 = {
 */
 
 //Code Here
+let user3 = user2
+user3.name = 'Bryan G. Smith'
+user3.email = 'bryan.smith@devmounta.in'
 
 /////////////////////// EXTRA PRACTICE PROBLEMS BELOW ////////////////////
 ////////// MOVE ONTO NEXT SECTION BEFORE WORKING ON THESE ////////////////
@@ -117,19 +121,22 @@ var user2 = {
 */
 
 //Code Here
-
+let methodCollection = {}
 /*
   Now add two methods (functions that are properties on objects) to your methodCollection object.
   One called 'alertHello' which alerts 'hello' and another method called 'logHello' which logs 'hello' to the console.
 */
 
 //Code Here
-
+methodCollection.alertHello = function() {alert(`hello`)}
+methodCollection.logHello = function() {console.log(`hello`)}
 /*
   Now call your alertHello and logHello methods.
 */
 
 //Code Here
+methodCollection.alertHello()
+methodCollection.logHello()
 
 ////////// PROBLEM 6 //////////
 
@@ -139,6 +146,14 @@ var user2 = {
 */
 
 //Code Here
+function makePerson(name, birthday, ssn) {
+  let newObject = {
+    name: name,
+    birthday: birthday,
+    ssn: ssn
+  }
+  return newObject
+}
 
 ////////// PROBLEM 7 //////////
 
@@ -148,3 +163,11 @@ var user2 = {
 */
 
 //Code Here
+function makeCard(cardNumber, expirationDate, securityCode) {
+  let creditCard = {
+    cardNumber: cardNumber,
+    expirationDate: expirationDate,
+    securityCode: securityCode
+  }
+  return creditCard
+}
